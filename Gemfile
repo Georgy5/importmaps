@@ -30,6 +30,9 @@ gem "jbuilder"
 # Use Faker to generate fake data
 gem "faker"
 
+# Use boostrap for respnsive design
+gem 'bootstrap', '~> 5.2.3'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
