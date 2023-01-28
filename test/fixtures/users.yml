@@ -1,5 +1,5 @@
 # Based on Michael Hartl's Rails Tutorial sample app
-Karlos:
+karlos:
   first_name: Karlos
   last_name: Georgy
   email: karlos@example.com

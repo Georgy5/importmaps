@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-  get 'users/new'
   root "recipes#index"
-  resources :recipes, only: [:index, :show]
+  resources :recipes, only: [:index, :show] do
+    resources :reviews, only: [:new, :create]
+  end
+  resources :reviews, only: [:show]
   resources :users
   get "sessions/new"
   get   "/signup", to: "users#new"

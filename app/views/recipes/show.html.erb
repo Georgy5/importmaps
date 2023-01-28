@@ -4,6 +4,12 @@
 <div class="row">
   <div class="col-md-6 offset-md-3">
     <p>Autor: <%= @recipe.author %></p>
+    <div>
+      <div class="star">
+        <% @avg_rating.times do %>
+          <i class="bi bi-star-fill"></i>
+        <% end %>
+      </div>
 
       <h2>Beschreibung</h2>
 

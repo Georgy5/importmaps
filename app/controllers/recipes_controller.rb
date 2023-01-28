@@ -5,5 +5,14 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
+    @recipe_ratings = @recipe.reviews.all
+    @avg_rating = @recipe_ratings.average(:rating).to_i()
+  end
+
+  private
+
+  def recipe_params
+    params.require(:recipe).permit(:title, :author,
+      :description)
   end
 end
