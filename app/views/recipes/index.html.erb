@@ -1,2 +1,19 @@
 <h1>Willkommen bei Ihrem Rezeptbuch</h1>
-<h2>Was koche ich heute?</h2>
+
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+
+    <p></p>
+
+    <h2>Was koche ich heute?</h2>
+    <ul class="list-unstyled">
+      <% @recipes.each do | recipe |%>
+        <li>
+          <%= link_to recipe.title, recipe_path(recipe) %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<hr>
