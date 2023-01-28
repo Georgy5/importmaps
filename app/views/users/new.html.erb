@@ -1,2 +1,29 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<% provide(:title, "Sign up") %>
+<h1>Sign up</h1>
+
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <%= form_with(model: @user) do |f| %>
+      <%= render "shared/error_msgs_user" %>
+
+      <%= f.label :first_name, "Vorname" %>
+      <%= f.text_field :first_name, class: "form-control" %>
+
+      <%= f.label :last_name, "Nachname" %>
+      <%= f.text_field :last_name, class: "form-control" %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control" %>
+
+      <%= f.label :password, "Passwort (min. 6 Zeichen)" %>
+      <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.label :password_confirmation, "Bestätigen" %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+
+      <%= f.submit "Anmelden", class: "btn btn-primary" %>
+    <% end %>
+
+    <p><%= link_to "Log in", login_path %></p>
+  </div>
+</div>
