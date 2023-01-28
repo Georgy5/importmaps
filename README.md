@@ -1,18 +1,16 @@
 # README
-## Rezeptbuch (WIP)
+## Rezeptbuch mit ImportMaps (WIP)
 #### Was koche ich heute?
 
-## Fortshritt
-Recipe Model\
-Boostratp to make it responsive\
+The "Rezeptbuch" recipe application but using Import Maps for managing JavaScript.
 
+Note: This app is without photos
 
 ### Datenbank Schema
 Geplantes Schema\
 ![Final_schema](https://user-images.githubusercontent.com/2192560/211815520-bd85366e-aeb0-42e0-8e54-b00541321e9d.PNG)
 
 * System dependencies:\
-  Yarn package manager (or NPM - I used Yarn)\
   Bundler
 
 * Database creation:\
