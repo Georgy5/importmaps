@@ -19,7 +19,8 @@
 
       <%= f.label :title, "Rezept bewerten" %>
       <%= f.select :rating, (1..5).to_a, 
-        label: "1 - 5", class: "form-control" %>
+        input_html: {data: {controller: "star-rating"}} %>
+
 
       <%= f.submit "Bewertung abgeben", class: "btn btn-primary" %>
     <% end %>
