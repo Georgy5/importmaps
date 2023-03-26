@@ -18,11 +18,11 @@ registry:
     - MRSK_REGISTRY_PASSWORD
 
 # Inject ENV variables into containers (secrets come from .env).
- env:
+env:
 #   clear:
 #     DB_HOST: 192.168.0.2
-   secret:
-     - RAILS_MASTER_KEY
+  secret:
+    - RAILS_MASTER_KEY
 
 # Call a broadcast command on deploys.
 # audit_broadcast_cmd:
