@@ -33,6 +33,9 @@ gem "faker"
 # Use boostrap for respnsive design
 gem "bootstrap", "~> 5.2.3"
 
+# Deploy with MRSK
+gem "mrsk", "~> 0.9.1"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
